@@ -1,0 +1,44 @@
+body{
+  margin:80px 0 80px 0;
+}
+.align-center{
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.btn-button{width:100%;}
+.navbar-footer-menu{
+  list-style: none;
+  margin:0;
+  padding:0;
+  text-align: center;
+  line-height: 50px;
+}
+
+.navbar-footer-menu li{
+  display: inline-block;
+  width: 30%;
+}
+.list-pro{width:10rem;}
+.right{float:right;}
+.esc{width:96%;margin:0 2%;}
+#table tr>td{vertical-align: middle;}
+
+/*文字动画*/
+*{margin:0;padding:0;}
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+h1.welcome {
+  position:absolute;top:50%;left:34%;color:#000;
+  font: bold 200% Consolas, Monaco, monospace;
+  border-right: .1em solid;
+  width: 18.5em; /* fallback */
+  width: 20ch; /* # of chars */
+  margin: 2em 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 10s steps(15, end), /* # of steps = # of chars */
+  blink-caret .5s step-end infinite alternate;
+}

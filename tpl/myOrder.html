@@ -1,0 +1,34 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<div class="container">
+  <h1 class="text-center">我的订单</h1>
+
+  <table class="table" id="table">
+    <thead>
+    <tr>
+      <th>编号</th>
+      <th>菜品</th>
+      <th>下单时间</th>
+      <th>联系人</th>
+    </tr>
+    </thead>
+
+    <tbody>
+      <tr >
+        <td>1</td>
+        <td>
+          <a href="#/kflDetail/:did">
+            <img ng-src="img/p6.jpg"
+                 class="img-responsive list-pro" alt="" />
+          </a>
+        </td>
+        <td>2017-6-7</td>
+        <td>大鱼海棠</td>
+      </tr>
+
+  </table>
+
+</div>
+
+
+<div ng-include="'tpl/include/footer.html'"></div>

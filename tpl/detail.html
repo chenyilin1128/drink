@@ -1,0 +1,43 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<div class="container">
+  <ul class="breadcrumb">
+    <li>
+      <a href="#/kflStart">主页</a>
+    </li>
+    <li>详情</li>
+  </ul>
+
+  <!-- 通过panel面板来实现-->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h4>西米露</h4>
+      <img ng-src="img/p6.jpg" class="img-responsive" alt=""/>
+
+      <p>描叙：非常好喝，非常好看，非常清凉西米包括两类，一种是由棕榈树的核或软核加工而成，
+        一种由木薯块茎提取的木薯淀粉制成。两种西米几乎都是纯淀粉，西米性温、味甘;
+        有健脾、补肺、亮发、健脑、明目,、益肝、治脾胃虚弱和消化不良的作用。</p>
+
+      <p>材料：西米、香芋、紫薯、炼奶、冰糖。做法：1.先用水把西米浸泡一会儿，
+        然后放入烧开的水里煮10分钟。2.将紫薯、香芋分别切好，放入另外一锅烧开的水，煮至软熟，加冰糖后关火。
+        4.盛出香芋和紫薯，淋上煮好的西米露，再依个人喜好加入炼奶即可。#甜点#</p>
+
+      <p>￥：15</p>
+    </div>
+    <div class="panel-footer">
+      <div class="text-right">
+        <button
+          ng-click="jump('/kflOrder/:did')"
+          class="btn btn-success">我要下单
+        </button>
+        <button
+          ng-click="jump('/kflStart')"
+          class="btn btn-primary">我再看看
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div ng-include="'tpl/include/footer.html'"></div>
